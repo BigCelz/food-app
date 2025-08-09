@@ -30,30 +30,6 @@ const Feature = () => {
         >
           <FeatureCard icon="/images/business.jpg" title="Real-time Reports" />
         </div>
-        <div
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          dta-aos-delay="300"
-        >
-          <FeatureCard icon="/images/business.jpg" title="Sales Performance" />
-        </div>
-        <div
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          dta-aos-delay="400"
-        >
-          <FeatureCard icon="/images/business.jpg" title="Market Trends" />
-        </div>
-        <div
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          dta-aos-delay="500"
-        >
-          <FeatureCard
-            icon="/images/business.jpg"
-            title="Data-Driven Decisions"
-          />
-        </div>
       </div>
     </div>
   );
