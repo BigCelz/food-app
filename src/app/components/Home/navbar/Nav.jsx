@@ -33,9 +33,11 @@ const Nav = ({ openNav }) => {
       <div className="flex items-center h-full justify-between w-[90%] mx-auto xl:w-[80%]">
         {/* logo */}
         <div className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-blue-950 rounded-full flex items-center justify-center flex-col dark:bg-white ">
-            <MdDeliveryDining className="w-6 h-6 text-white dark:text-black " />
-          </div>
+          <Link href="/">
+            <div className="w-10 h-10 bg-blue-950 rounded-full flex items-center justify-center flex-col dark:bg-white ">
+              <MdDeliveryDining className="w-6 h-6 text-white dark:text-black " />
+            </div>
+          </Link>
 
           <h1 className="text-xl md:text-2xl text-black dark:text-white hidden sm:block font-bold">
             Foodie
@@ -66,9 +68,11 @@ const Nav = ({ openNav }) => {
 
         {/* buttons */}
         <div className="flex items-center space-x-4">
-          <button className="bg-blue-950 dark:bg-white px-8 py-2.5  text-white whitespace-nowrap dark:text-black font-bold rounded-lg hover:bg-black dark:hover:bg-gray-400 transition-all duration-200 cursor-pointer">
-            Join Now
-          </button>
+          <Link href="/resturant">
+            <button className="bg-blue-950 dark:bg-white px-8 py-2.5  text-white whitespace-nowrap dark:text-black font-bold rounded-lg hover:bg-black dark:hover:bg-gray-400 transition-all duration-200 cursor-pointer">
+              Place Order
+            </button>
+          </Link>
 
           {/* theme toggler */}
           <ThemeToggler />
