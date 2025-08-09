@@ -24,10 +24,6 @@ const HowItWorkCard = ({ image, title, description, num }) => {
         <p className="text-center font-medium sm:w-[80%] mx-auto text-gray-700 dark:text-gray-300 mt-3 ">
           {description}
         </p>
-
-        <p className="mt-4 text-base font-bold text-blue-800 dark:text-blue-400 hover:text-blue-600 transition-all duration-150 cursor-pointer text-center">
-            Start Earning &rarr;
-        </p>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ const ThemeToggler = () => {
   const currentTheme = theme === "system" ? systemTheme : theme;
   return (
     <button
-      className="p-2 transition w-10 h-10 rounded-full bg-blue-950 dark:bg-white dark:hover:bg-gray-400 flex items-center justify-center flex-col  duration-200"
+      className="p-2 transition w-10 h-10 rounded-full bg-blue-950 hover:bg-blue-900 dark:bg-white dark:hover:bg-gray-400 flex items-center justify-center flex-col  duration-200"
       onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
     >
         {currentTheme === 'dark' ? (

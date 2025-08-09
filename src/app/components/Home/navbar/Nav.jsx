@@ -69,7 +69,7 @@ const Nav = ({ openNav }) => {
         {/* buttons */}
         <div className="flex items-center space-x-4">
           <Link href="/resturant">
-            <button className="bg-blue-950 dark:bg-white px-8 py-2.5  text-white whitespace-nowrap dark:text-black font-bold rounded-lg hover:bg-black dark:hover:bg-gray-400 transition-all duration-200 cursor-pointer">
+            <button className="bg-blue-950 dark:bg-white px-8 py-2.5  text-white whitespace-nowrap dark:text-black font-bold rounded-lg hover:bg-blue-900 dark:hover:bg-gray-400 transition-all duration-200 cursor-pointer">
               Place Order
             </button>
           </Link>
