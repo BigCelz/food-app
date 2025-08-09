@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+@layer components {
+  .footer_link {
+    @apply text-white font-medium cursor-pointer text-sm hover:text-yellow-300 w-fit;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
