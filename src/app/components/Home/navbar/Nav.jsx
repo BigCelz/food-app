@@ -32,17 +32,15 @@ const Nav = ({ openNav }) => {
     >
       <div className="flex items-center h-full justify-between w-[90%] mx-auto xl:w-[80%]">
         {/* logo */}
-        <div className="flex items-center space-x-2">
-          <Link href="/">
-            <div className="w-10 h-10 bg-blue-950 rounded-full flex items-center justify-center flex-col dark:bg-white ">
-              <MdDeliveryDining className="w-6 h-6 text-white dark:text-black " />
-            </div>
-          </Link>
+        <Link href="/" className="flex items-center space-x-2">
+          <div className="w-10 h-10 bg-blue-950 rounded-full flex items-center justify-center flex-col dark:bg-white">
+            <MdDeliveryDining className="w-6 h-6 text-white dark:text-black" />
+          </div>
 
           <h1 className="text-xl md:text-2xl text-black dark:text-white hidden sm:block font-bold">
             Foodie
           </h1>
-        </div>
+        </Link>
 
         {/* navlinks */}
         <div className="hidden lg:flex space-x-10 items-center ">
