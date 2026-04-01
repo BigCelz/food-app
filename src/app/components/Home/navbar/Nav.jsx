@@ -33,7 +33,7 @@ const Nav = ({ openNav }) => {
       <div className="flex items-center h-full justify-between w-[90%] mx-auto xl:w-[80%]">
         {/* logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-blue-950 rounded-full flex items-center justify-center flex-col dark:bg-white">
+          <div className="w-10 h-10 bg-blue-950 rounded-full flex items-center justify-center flex-col dark:bg-white ">
             <MdDeliveryDining className="w-6 h-6 text-white dark:text-black" />
           </div>
 

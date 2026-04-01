@@ -1,15 +1,20 @@
-'use client'
+"use client";
 
-import FoodCard from "../components/FoodCard"
+import FoodCard from "../components/FoodCard";
 
 const foodItems = [
-  { id: 1, name: 'Jollof Rice', price: 1500, image: '/images/jollof.png' },
-  { id: 2, name: 'Eba & Egusi', price: 1800, image: '/images/eba.jpg' },
-  { id: 3, name: 'Fried Rice', price: 1600, image: '/images/friedrice.jpg' },
-  { id: 4, name: 'Amala & Ewedu', price: 1700, image: '/images/amala.jpg' },
-  { id: 5, name: 'Moi Moi & Pap', price: 1000, image: '/images/moinmoin.jpg' },
-  { id: 6, name: 'White Rice & Stew', price: 1400, image: '/images/whiterice.png' },
-]
+  { id: 1, name: "Jollof Rice", price: 1500, image: "/images/jollof.png" },
+  { id: 2, name: "Eba & Egusi", price: 1800, image: "/images/eba.jpg" },
+  { id: 3, name: "Fried Rice", price: 1600, image: "/images/friedrice.jpg" },
+  { id: 4, name: "Amala & Ewedu", price: 1700, image: "/images/amala.jpg" },
+  { id: 5, name: "Moi Moi & Pap", price: 1000, image: "/images/moinmoin.jpg" },
+  {
+    id: 6,
+    name: "White Rice & Stew",
+    price: 1400,
+    image: "/images/whiterice.png",
+  },
+];
 
 export default function RestaurantsPage() {
   return (
@@ -21,7 +26,7 @@ export default function RestaurantsPage() {
 
       {/* Grid of Food Cards */}
       <div className="w-[80%] mx-auto grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 mt-14">
-        {foodItems.map(item => (
+        {foodItems.map((item) => (
           <div key={item.id}>
             <FoodCard item={item} />
           </div>
@@ -35,7 +40,5 @@ export default function RestaurantsPage() {
         </button>
       </div>
     </div>
-  )
+  );
 }
-
-
