@@ -1,19 +1,23 @@
-import Image from "next/image";
+import { Utensils, Smartphone, Truck } from "lucide-react";
 import React from "react";
 
-const HowItWorkCard = ({ image, title, description, num }) => {
+const iconMap = {
+  utensils: Utensils,
+  smartphone: Smartphone,
+  truck: Truck,
+};
+
+const HowItWorkCard = ({ icon, title, description, num }) => {
+  const Icon = iconMap[icon];
+
   return (
     <div>
-      <div className="relative ">
-        <Image
-          src={image}
-          alt={title}
-          width={250}
-          height={250}
-          className="object-contain mx-auto"
-        />
+      <div className="relative">
+        <div className="flex justify-center">
+          {Icon && <Icon className="w-32 h-32 text-pink-600 opacity-80" />}
+        </div>
 
-        <div className="w-24 h-14 bg-pink-600 text-white text-xl font-bold flex items-center justify-center flex-col absolute top-0 left-0 rounded-full">
+        <div className="w-14 h-14 bg-gray-700 text-white text-xl font-bold flex items-center justify-center flex-col absolute top-0 left-0 rounded-full">
           {num}
         </div>
 
@@ -21,7 +25,7 @@ const HowItWorkCard = ({ image, title, description, num }) => {
           {title}
         </h1>
 
-        <p className="text-center font-medium sm:w-[80%] mx-auto text-gray-700 dark:text-gray-300 mt-3 ">
+        <p className="text-center font-medium sm:w-[80%] mx-auto text-gray-700 dark:text-gray-300 mt-3">
           {description}
         </p>
       </div>

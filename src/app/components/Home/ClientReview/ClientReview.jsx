@@ -22,10 +22,31 @@ const responsive = {
   },
 };
 
+const reviews = [
+  {
+    reviewTitle: "Fastest delivery ever!",
+    review: "I ordered during my lunch break and the food arrived before I even sat back down. Hot, fresh, and exactly what I wanted.",
+    userName: "Jane Doe",
+    role: "Regular Customer",
+  },
+  {
+    reviewTitle: "So easy to use",
+    review: "The website is super clean and straightforward. Found my favourite restaurant, ordered, and tracked it in real time. Love it.",
+    userName: "Sarah Johnson",
+    role: "Food Lover",
+  },
+  {
+    reviewTitle: "Never disappoints",
+    review: "Been using this service for months now. Every order has been on time and the food always arrives in great condition.",
+    userName: "Michael Lee",
+    role: "Loyal Customer",
+  },
+];
+
 const ClientReview = () => {
   return (
     <div className="pb-26 pt-16">
-      <h1 className="text-xl sm:text-2xl font-extrabold text-center ">
+      <h1 className="text-xl sm:text-2xl font-extrabold text-center">
         What people say about us
       </h1>
 
@@ -37,24 +58,9 @@ const ClientReview = () => {
           autoPlay={true}
           autoPlaySpeed={4000}
         >
-          <ReviewCard
-            reviewTitle="Great work!"
-            userName="Jane Doe"
-            role="UI/UX Designer"
-            userImage="/images/user1.png"
-          />
-          <ReviewCard
-            reviewTitle="Amazing support!"
-            userName="Sarah Johnson"
-            role="Frontend Developer"
-            userImage="/images/user2.png"
-          />
-          <ReviewCard
-            reviewTitle="Highly recommend!"
-            userName="Michael Lee"
-            role="Product Manager"
-            userImage="/images/user3.jpg"
-          />
+          {reviews.map((review) => (
+            <ReviewCard key={review.userName} {...review} />
+          ))}
         </Carousel>
       </div>
     </div>

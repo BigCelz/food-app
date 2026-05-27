@@ -12,7 +12,7 @@ const HowItWork = () => {
         <div data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay="0">
           <HowItWorkCard
             num="01"
-            image="/images/kiosk.png"
+            icon="utensils"
             title="Choose Your Meal"
             description="Browse our wide selection of delicious meals and pick your favorites."
           />
@@ -20,15 +20,15 @@ const HowItWork = () => {
         <div data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay="100">
           <HowItWorkCard
             num="02"
-            image="/images/phone.png"
+            icon="smartphone"
             title="Place Your Order"
             description="Order easily through our website or app in just a few clicks."
           />
         </div>
         <div data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-delay="200">
           <HowItWorkCard
-            num="03"    
-            image="/images/van.jpg"
+            num="03"
+            icon="truck"
             title="Enjoy Your Delivery"
             description="Sit back, relax, and enjoy your freshly prepared meal delivered to your door."
           />
